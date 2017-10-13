@@ -1,0 +1,31 @@
+$navbar-height-xs: 60px;
+$navbar-height-lg: 81px;
+
+$font-1:    'BrandonGrotesque-Regular', sans-serif;
+$font-1-color: #4a4a4a;
+$font-1-bold: 200;
+
+$h1-bold: 800;
+$h1-line-height: 1.1;
+
+$font-2:    'BrandonGrotesque-Regular', sans-serif;
+$font-2-color: #ffffff;
+$font-2-bold: 100;
+
+$font-3:    'BrandonGrotesque-Bold', sans-serif;
+$font-3-color: #ffffff;
+$font-3-bold: 100;
+
+$font-4:    'AvenirNext-Regular', sans-serif;
+$font-4-color: #ffffff;
+
+// @font-face {
+//   font-family: 'BrandonGrotesque-Regular';
+//   src: local(Brandon Grotesque Regular);
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+.centre-text {
+  text-align: center;
+}

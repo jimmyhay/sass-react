@@ -1,0 +1,24 @@
+.nav-menu-background {
+  display: inline;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100vw;
+  // transform: translate3d(0vw, 0, 0);
+  background-color: lightpink;
+}
+
+.nav-close-button {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  margin-top: 10px+50px;
+  background-color: red;
+}
+
+@include media("<=phone") {
+  .nav-menu-background {
+    display: none;
+  }
+}

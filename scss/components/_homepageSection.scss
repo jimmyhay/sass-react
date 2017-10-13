@@ -1,0 +1,79 @@
+.video-overlay-two {
+  // min-height: 50vh;
+  display: flex;
+  height: 100%;
+  overflow:hidden;
+  position: relative;
+}
+
+.homepage-section-video-overlay {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  transform: translate( -50%, 0% );
+  z-index: 2;
+  opacity:.5;
+  // display: none;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+}
+
+.homepage-section-video-container {
+  position: absolute;
+  left: 0px; top: 0px;
+  height: 100%;
+  width: 100%;
+  // background-color: green;
+}
+
+.homepage-section-video-background {
+  position: absolute;
+  left:0px;
+  top: 0px;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: .5;
+  z-index: 1;
+}
+
+.homepage-section-bits {
+  position: relative;
+  // top: 50%;
+  left: 50%;
+  transform: translate( -50%, 0% );
+  width: 40%;
+  text-align: center;
+  padding: 30px 29px 30px 29px;
+  // padding: 40px;
+  z-index: 5;
+}
+
+.homepage-section-bits h2 {
+  margin-top: 0px;
+}
+
+.homepage-section-subtext-1, .homepage-section-subtext-2 {
+  font-family: $font-4;
+  color: $font-4-color;
+  text-align: center;
+}
+
+.homepage-section-subtext-1 {
+  padding-bottom: 30px;
+}
+
+.homepage-section-subtext-2 {
+  font-size: 14px;
+}
+
+
+// @include media("<=desktop") {
+//   .video-overlay-two {
+//     display: none;
+//   }
+// }

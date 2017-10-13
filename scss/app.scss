@@ -1,0 +1,29 @@
+@import 'components/include-media.scss';
+@import 'config/_config.scss';
+@import 'components/_navbar.scss';
+@import 'components/_navmenu.scss';
+@import 'components/_homepage.scss';
+@import 'components/_homepageSection.scss';
+@import 'mixins/_breakpoints.scss';
+
+html body {
+  margin: 0px;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+  font-family: $font-2;
+  color: #ffffff;
+  font-size: 72px;
+  text-align: center;
+}
+
+h2 {
+  font-family: $font-3;
+  color: $font-3-color;
+  font-size: 36px;
+  text-align: center;
+}
