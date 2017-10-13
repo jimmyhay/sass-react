@@ -25519,18 +25519,18 @@
 	        _react2.default.createElement(
 	          'div',
 	          null,
-	          _react2.default.createElement(_HomepageSection2.default, { color: 'lightgrey', video: './assets/videos/HP_about.mp4' })
+	          _react2.default.createElement(_HomepageSection2.default, { color: 'black', video: './assets/videos/HP_about.mp4' })
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_HomepageSection2.default, { color: 'blue', video: './assets/videos/HP_LifeAfter.mp4' })
+	        _react2.default.createElement(_HomepageSection2.default, { color: 'black', video: './assets/videos/HP_LifeAfter.mp4' })
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_HomepageSection2.default, { color: 'white', video: './assets/videos/HP_TakeAction0.mp4' })
+	        _react2.default.createElement(_HomepageSection2.default, { color: 'black', video: './assets/videos/HP_TakeAction0.mp4' })
 	      )
 	    );
 	  }
@@ -33726,21 +33726,39 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'video-overlay-two', style: { backgroundColor: this.props.color }, onMouseOver: this.mouseOverHandler.bind(this),
-	          onMouseOut: this.mouseOutHandler.bind(this) },
+	        null,
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'homepage-section-bits' },
+	          { className: 'video-overlay-two', style: { backgroundColor: this.props.color }, onMouseOver: this.mouseOverHandler.bind(this),
+	            onMouseOut: this.mouseOutHandler.bind(this) },
 	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'About Stroke'
+	            'div',
+	            { className: 'homepage-section-bits' },
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              'About Stroke'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'homepage-section-subtext-1' },
+	              'Stroke is a brain attack, occurring when the blood supply to any part of the brain is cut off or blocked. '
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'homepage-section-subtext-2' },
+	              'Find out more about stroke, the causes, effects, the different types, and other general information.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'homepage-section-video-container' },
+	            _react2.default.createElement(
+	              'video',
+	              { ref: 'video', loop: 'true', className: 'homepage-section-video-background', muted: 'true' },
+	              _react2.default.createElement('source', { src: this.props.video, type: 'video/mp4' })
+	            )
 	          )
-	        ),
-	        _react2.default.createElement(
-	          'video',
-	          { ref: 'video', loop: 'true', className: 'page-content-video-background', muted: 'true' },
-	          _react2.default.createElement('source', { src: this.props.video, type: 'video/mp4' })
 	        )
 	      );
 	    }
@@ -34030,7 +34048,7 @@
 
 
 	// module
-	exports.push([module.id, ".centre-text {\n  text-align: center; }\n\n.navbar {\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 60px;\n  margin: 0px;\n  padding: 15px;\n  box-sizing: border-box;\n  background-color: #333333;\n  z-index: 100; }\n\n.nav-logo {\n  box-sizing: border-box;\n  margin: 4px 0px 4px 0px;\n  width: 175px;\n  height: 25px;\n  background: url(\"http://localhost:8080/assets/nav/xs/logo.png\") left top no-repeat; }\n\n@media (min-width: 1025px) {\n  .navbar {\n    height: 81px;\n    padding: 16px 0px 15px 30px; }\n\n  .nav-logo {\n    width: 295px;\n    height: 40px;\n    margin: 4px 0px 4px 0px;\n    background: url(\"http://localhost:8080/assets/nav/lg/logo.png\") left top no-repeat; } }\n.nav-menu-background {\n  display: inline;\n  position: fixed;\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: -100vw;\n  background-color: lightpink; }\n\n.nav-close-button {\n  width: 100px;\n  height: 50px;\n  margin: 10px;\n  margin-top: 60px;\n  background-color: red; }\n\n@media (max-width: 320px) {\n  .nav-menu-background {\n    display: none; } }\n.nav-dummy-placeholder {\n  width: 100%;\n  height: 60px;\n  background-color: white; }\n\n.full-page-video {\n  bakground-color: lightgrey; }\n\n.video-overlay {\n  width: 100%;\n  height: calc(100vh - 60px);\n  background-color: black;\n  opacity: .5; }\n\n.background-video {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  min-width: 100%;\n  min-height: 100%;\n  width: auto;\n  height: auto;\n  -ms-transform: translateX(-50%) translateY(-50%);\n  -moz-transform: translateX(-50%) translateY(-50%);\n  -webkit-transform: translateX(-50%) translateY(-50%);\n  transform: translateX(-50%) translateY(-50%);\n  background-size: cover;\n  overflow: hidden;\n  z-index: -99; }\n\n.homepage-content {\n  position: absolute;\n  top: 60px;\n  width: 100%;\n  height: calc(100vh - 60px); }\n\n.homepage-content h1 {\n  height: calc(100vh - 60px);\n  margin: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0px 10px 0px 10px;\n  font-weight: 800;\n  line-height: 1.1; }\n\n.homepage-scroll {\n  position: absolute;\n  bottom: 30px;\n  left: 50%;\n  transform: translate(-50%, 0); }\n\n.homepage-scroll div {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  color: #ffffff;\n  font-weight: 100;\n  padding-bottom: 10px; }\n\n.homepage-scroll img {\n  display: block;\n  margin: auto; }\n\n.homepage-intro-container {\n  background-color: white;\n  box-sizing: border-box;\n  padding: 60px 29px 60px 29px; }\n\n.homepage-intro-text-1 {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  font-weight: 200;\n  color: #4a4a4a;\n  font-size: 24px;\n  padding-bottom: 30px; }\n\n.homepage-intro-text-2 {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  color: #4a4a4a;\n  font-size: 18px; }\n\n@media (min-width: 1025px) {\n  .nav-dummy-placeholder {\n    height: 81px; }\n\n  .video-overlay {\n    width: 100%;\n    height: calc(100vh - 81px); }\n\n  .homepage-content h1 {\n    font-size: 90px; }\n\n  .homepage-intro-container {\n    padding: 120px 247px 120px 247px; }\n\n  .homepage-intro-text-1 {\n    padding-bottom: 50px; } }\n.video-overlay-two {\n  position: relative;\n  width: 100%;\n  height: 50vh;\n  overflow: hidden; }\n\n.page-content-video-background {\n  object-fit: cover;\n  width: 100%;\n  height: 100%; }\n\n.homepage-section-bits {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 0); }\n\nhtml body {\n  margin: 0px; }\n\nbody {\n  background-color: lightgreen; }\n\nh1 {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  color: #ffffff;\n  font-size: 72px;\n  text-align: center; }\n\nh2 {\n  font-family: \"BrandonGrotesque-Bold\", sans-serif;\n  color: #ffffff;\n  font-size: 36px;\n  text-align: center; }\n", ""]);
+	exports.push([module.id, ".centre-text {\n  text-align: center; }\n\n.navbar {\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 60px;\n  margin: 0px;\n  padding: 15px;\n  box-sizing: border-box;\n  background-color: #333333;\n  z-index: 100; }\n\n.nav-logo {\n  box-sizing: border-box;\n  margin: 4px 0px 4px 0px;\n  width: 175px;\n  height: 25px;\n  background: url(\"http://localhost:8080/assets/nav/xs/logo.png\") left top no-repeat; }\n\n@media (min-width: 1025px) {\n  .navbar {\n    height: 81px;\n    padding: 16px 0px 15px 30px; }\n\n  .nav-logo {\n    width: 295px;\n    height: 40px;\n    margin: 4px 0px 4px 0px;\n    background: url(\"http://localhost:8080/assets/nav/lg/logo.png\") left top no-repeat; } }\n.nav-menu-background {\n  display: inline;\n  position: fixed;\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: -100vw;\n  background-color: lightpink; }\n\n.nav-close-button {\n  width: 100px;\n  height: 50px;\n  margin: 10px;\n  margin-top: 60px;\n  background-color: red; }\n\n@media (max-width: 320px) {\n  .nav-menu-background {\n    display: none; } }\n.nav-dummy-placeholder {\n  width: 100%;\n  height: 60px;\n  background-color: white; }\n\n.full-page-video {\n  bakground-color: lightgrey; }\n\n.video-overlay {\n  width: 100%;\n  height: calc(100vh - 60px);\n  background-color: black;\n  opacity: .5; }\n\n.background-video {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  min-width: 100%;\n  min-height: 100%;\n  width: auto;\n  height: auto;\n  -ms-transform: translateX(-50%) translateY(-50%);\n  -moz-transform: translateX(-50%) translateY(-50%);\n  -webkit-transform: translateX(-50%) translateY(-50%);\n  transform: translateX(-50%) translateY(-50%);\n  background-size: cover;\n  overflow: hidden;\n  z-index: -99; }\n\n.homepage-content {\n  position: absolute;\n  top: 60px;\n  width: 100%;\n  height: calc(100vh - 60px); }\n\n.homepage-content h1 {\n  height: calc(100vh - 60px);\n  margin: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 0px 10px 0px 10px;\n  font-weight: 800;\n  line-height: 1.1; }\n\n.homepage-scroll {\n  position: absolute;\n  bottom: 30px;\n  left: 50%;\n  transform: translate(-50%, 0); }\n\n.homepage-scroll div {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  color: #ffffff;\n  font-weight: 100;\n  padding-bottom: 10px; }\n\n.homepage-scroll img {\n  display: block;\n  margin: auto; }\n\n.homepage-intro-container {\n  background-color: white;\n  box-sizing: border-box;\n  padding: 60px 29px 60px 29px; }\n\n.homepage-intro-text-1 {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  font-weight: 200;\n  color: #4a4a4a;\n  font-size: 24px;\n  padding-bottom: 30px; }\n\n.homepage-intro-text-2 {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  color: #4a4a4a;\n  font-size: 18px; }\n\n@media (min-width: 1025px) {\n  .nav-dummy-placeholder {\n    height: 81px; }\n\n  .video-overlay {\n    width: 100%;\n    height: calc(100vh - 81px); }\n\n  .homepage-content h1 {\n    font-size: 90px; }\n\n  .homepage-intro-container {\n    padding: 120px 247px 120px 247px; }\n\n  .homepage-intro-text-1 {\n    padding-bottom: 50px; } }\n.video-overlay-two {\n  display: flex;\n  height: 100%;\n  overflow: hidden;\n  position: relative; }\n\n.homepage-section-video-overlay {\n  position: relative;\n  left: 0;\n  width: 100%;\n  height: auto;\n  background-color: black;\n  transform: translate(-50%, 0%);\n  z-index: 2;\n  opacity: .5; }\n\n.clear {\n  clear: both;\n  height: 0; }\n\n.homepage-section-video-container {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  height: 100%;\n  width: 100%; }\n\n.homepage-section-video-background {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  opacity: .5;\n  z-index: 1; }\n\n.homepage-section-bits {\n  position: relative;\n  left: 50%;\n  transform: translate(-50%, 0%);\n  width: 40%;\n  text-align: center;\n  padding: 30px 29px 30px 29px;\n  z-index: 5; }\n\n.homepage-section-bits h2 {\n  margin-top: 0px; }\n\n.homepage-section-subtext-1, .homepage-section-subtext-2 {\n  font-family: \"AvenirNext-Regular\", sans-serif;\n  color: #ffffff;\n  text-align: center; }\n\n.homepage-section-subtext-1 {\n  padding-bottom: 30px; }\n\n.homepage-section-subtext-2 {\n  font-size: 14px; }\n\nhtml body {\n  margin: 0px; }\n\nbody {\n  background-color: lightgreen; }\n\nh1 {\n  font-family: \"BrandonGrotesque-Regular\", sans-serif;\n  color: #ffffff;\n  font-size: 72px;\n  text-align: center; }\n\nh2 {\n  font-family: \"BrandonGrotesque-Bold\", sans-serif;\n  color: #ffffff;\n  font-size: 36px;\n  text-align: center; }\n", ""]);
 
 	// exports
 
