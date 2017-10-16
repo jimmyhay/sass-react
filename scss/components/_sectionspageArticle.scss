@@ -1,0 +1,16 @@
+.sections-article-container {
+  background-color: white;
+}
+
+.sections-article-img-container {
+  width: 100%;
+  // padding: 30px;
+  overflow: hidden;
+}
+
+.sections-article-img-container img {
+  width: 100vw;
+  display: inline-block; /* Instead of display: block; */
+    margin: 0 auto;
+    vertical-align: middle;
+}

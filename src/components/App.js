@@ -16,13 +16,11 @@ class App extends React.Component {
    }
 
   componentDidMount() {
-    console.log(this.props.children);
-
     window.addEventListener('scroll', this.handleScroll.bind(this));
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll.bind(this));
   }
 
   componentDidUpdate() {
@@ -30,16 +28,25 @@ class App extends React.Component {
   }
 
   handleScroll(event) {
+    // console.log('handleScroll');
     // console.log(window.pageYOffset);
 
     // console.log();
     //console.log(document.documentElement.offsetHeight-window.innerHeight);
 
     // console.log(ReactDOM.findDOMNode(this.refs['homepageIntro']).getBoundingClientRect().y/window.innerHeight);
-    console.log(ReactDOM.findDOMNode(this.refs['refTest']));
-    if (ReactDOM.findDOMNode(this.refs['homepageIntro']).getBoundingClientRect().y/window.innerHeight < 0.8
-        && !this.state.homepageIntroVisible) {
-        // TweenMax.to(this.refs.homepageIntro,.6,{opacity:1, ease:'easeInOutCubic'});
+    // console.log(ReactDOM.findDOMNode(this.refs.refTest.refs.refTest2));
+    // console.log(ReactDOM.findDOMNode(this.refs['homepageIntro']).getBoundingClientRect());
+    var pagePercent = ReactDOM.findDOMNode(this.refs['homepageIntro']).getBoundingClientRect().top/screen.height;
+    // console.log(pagePercent);
+    if (pagePercent < 0.5
+        && !this.refs.refTest.state.introText1Visible) {
+        this.refs.refTest.setState({introText1Visible : true});
+        TweenMax.to(ReactDOM.findDOMNode(this.refs.refTest.refs.homepageIntro1),.6,{opacity:1, ease:'easeInOutCubic'});
+    } else if (pagePercent < 0.3
+        && !this.refs.refTest.state.introText2Visible) {
+        this.refs.refTest.setState({introText2Visible : true});
+        TweenMax.to(ReactDOM.findDOMNode(this.refs.refTest.refs.homepageIntro2),.6,{opacity:1, ease:'easeInOutCubic'});
     }
     // this.setProps({scrollPos: window.pageYOffset});
 
@@ -69,7 +76,7 @@ class App extends React.Component {
         <div className='nav-dummy-placeholder'></div>
         <div className='video-overlay'></div>
         <div className='homepage-content'>
-          <h1>Sign Against Stroke</h1>
+          <span className='heading-span-one'><h1>Sign Against Stroke</h1></span>
           <div className='homepage-scroll'>
             <div>Scroll to Explore</div>
             <img src='./assets/homepage/down-arrow.png'/>

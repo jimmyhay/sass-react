@@ -1,243 +1,66 @@
-.centre-text {
-  text-align: center; }
+/*
+Error: File to import not found or unreadable: components/_sectionspage.scss.
+       Load path: /Users/amsys/Documents/GitHub/sass-react/scss
+        on line 8 of scss/app.scss
 
-.blue-button-container {
-  width: 155px;
-  height: 55px;
-  background-color: #7bceed;
-  font-family: "AvenirNext-Regular", sans-serif;
-  color: #ffffff;
-  margin: 0 auto; }
+3: @import 'components/_bluebutton.scss';
+4: @import 'components/_navbar.scss';
+5: @import 'components/_navmenu.scss';
+6: @import 'components/_homepage.scss';
+7: @import 'components/_homepageSection.scss';
+8: @import 'components/_sectionspage.scss';
+9: @import 'components/_sectionspageArticle.scss';
+10: @import 'mixins/_breakpoints.scss';
+11: 
+12: html body {
+13:   margin: 0px;
 
-.blue-button-text {
-  text-align: center;
-  line-height: 55px; }
-
-.navbar {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 60px;
-  margin: 0px;
-  padding: 15px;
-  box-sizing: border-box;
-  background-color: #333333;
-  z-index: 100; }
-
-.nav-logo {
-  box-sizing: border-box;
-  margin: 4px 0px 4px 0px;
-  width: 175px;
-  height: 25px;
-  background: url("http://localhost:8080/assets/nav/xs/logo.png") left top no-repeat; }
-
-@media (min-width: 1025px) {
-  .navbar {
-    height: 81px;
-    padding: 16px 0px 15px 30px; }
-
-  .nav-logo {
-    width: 295px;
-    height: 40px;
-    margin: 4px 0px 4px 0px;
-    background: url("http://localhost:8080/assets/nav/lg/logo.png") left top no-repeat; } }
-.nav-menu-background {
-  display: inline;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: -100vw;
-  background-color: lightpink; }
-
-.nav-close-button {
-  width: 100px;
-  height: 50px;
-  margin: 10px;
-  margin-top: 60px;
-  background-color: red; }
-
-@media (max-width: 320px) {
-  .nav-menu-background {
-    display: none; } }
-.nav-dummy-placeholder {
-  width: 100%;
-  height: 60px;
-  background-color: white; }
-
-.full-page-video {
-  bakground-color: lightgrey; }
-
-.video-overlay {
-  width: 100%;
-  height: calc(100vh - 60px);
-  background-color: black;
-  opacity: .5; }
-
-.background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  overflow: hidden;
-  z-index: -99; }
-
-.homepage-content {
-  position: absolute;
-  top: 60px;
-  width: 100%;
-  height: calc(100vh - 60px); }
-
-.homepage-content h1 {
-  height: calc(100vh - 60px);
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 10px 0px 10px;
-  font-weight: 800;
-  line-height: 1.1; }
-
-.homepage-scroll {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 0); }
-
-.homepage-scroll div {
-  font-family: "BrandonGrotesque-Regular", sans-serif;
-  color: #ffffff;
-  font-weight: 100;
-  padding-bottom: 10px; }
-
-.homepage-scroll img {
-  display: block;
-  margin: auto; }
-
-.homepage-intro-container {
-  background-color: white;
-  box-sizing: border-box;
-  padding: 60px 29px 60px 29px; }
-
-.homepage-intro-text-1, .homepage-intro-text-2 {
-  font-family: "BrandonGrotesque-Regular", sans-serif;
-  color: #4a4a4a;
-  max-width: 600px;
-  margin: 0 auto; }
-
-.homepage-intro-text-1 {
-  font-weight: 200;
-  font-size: 24px;
-  padding-bottom: 30px; }
-
-.homepage-intro-text-2 {
-  font-size: 18px; }
-
-@media (min-width: 1025px) {
-  .nav-dummy-placeholder {
-    height: 81px; }
-
-  .video-overlay {
-    width: 100%;
-    height: calc(100vh - 81px); }
-
-  .homepage-content h1 {
-    font-size: 90px; }
-
-  .homepage-intro-container {
-    padding: 120px 247px 120px 247px; }
-
-  .homepage-intro-text-1 {
-    padding-bottom: 50px; } }
-.video-overlay-two {
-  display: flex;
-  min-height: 50vh;
-  height: 100%;
-  overflow: hidden;
-  position: relative; }
-
-.homepage-section-video-overlay {
-  position: relative;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background-color: black;
-  transform: translate(-50%, 0%);
-  z-index: 2;
-  opacity: .5; }
-
-.clear {
-  clear: both;
-  height: 0; }
-
-.homepage-section-video-container {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  width: 100%; }
-
-.homepage-section-video-background {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: .5;
-  z-index: 1; }
-
-.homepage-section-bits {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 100%;
-  text-align: center;
-  padding: 30px 29px 30px 29px;
-  z-index: 5; }
-
-.homepage-section-bits h2 {
-  margin-top: 0px; }
-
-.homepage-section-subtext-1, .homepage-section-subtext-2 {
-  font-family: "AvenirNext-Regular", sans-serif;
-  color: #ffffff;
-  text-align: center;
-  max-width: 350px;
-  margin: 0 auto; }
-
-.homepage-section-subtext-1 {
-  padding-bottom: 30px; }
-
-.homepage-section-subtext-2 {
-  font-size: 14px;
-  padding-bottom: 60px; }
-
-html body {
-  margin: 0px; }
-
-body {
-  background-color: black; }
-
-h1 {
-  font-family: "BrandonGrotesque-Regular", sans-serif;
-  color: #ffffff;
-  font-size: 72px;
-  text-align: center; }
-
-h2 {
-  font-family: "BrandonGrotesque-Bold", sans-serif;
-  color: #ffffff;
-  font-size: 36px;
-  text-decoration: 'none'; }
-
-/*# sourceMappingURL=app.css.map */
+Backtrace:
+scss/app.scss:8
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: components/_sectionspage.scss.\A        Load path: /Users/amsys/Documents/GitHub/sass-react/scss\A         on line 8 of scss/app.scss\A \A 3: @import 'components/_bluebutton.scss';\A 4: @import 'components/_navbar.scss';\A 5: @import 'components/_navmenu.scss';\A 6: @import 'components/_homepage.scss';\A 7: @import 'components/_homepageSection.scss';\A 8: @import 'components/_sectionspage.scss';\A 9: @import 'components/_sectionspageArticle.scss';\A 10: @import 'mixins/_breakpoints.scss';\A 11: \A 12: html body {\A 13:   margin: 0px;"; }

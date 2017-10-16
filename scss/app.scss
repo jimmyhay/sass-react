@@ -5,6 +5,8 @@
 @import 'components/_navmenu.scss';
 @import 'components/_homepage.scss';
 @import 'components/_homepageSection.scss';
+@import 'components/_sectionspage.scss';
+@import 'components/_sectionspageArticle.scss';
 @import 'mixins/_breakpoints.scss';
 
 html body {
@@ -18,7 +20,7 @@ body {
 h1 {
   font-family: $font-2;
   color: #ffffff;
-  font-size: 72px;
+  font-size: 48px;
   text-align: center;
 }
 
@@ -26,5 +28,12 @@ h2 {
   font-family: $font-3;
   color: $font-3-color;
   font-size: 36px;
+  text-decoration: 'none';
+}
+
+h3 {
+  font-family: $font-3;
+  color: $font-3-color;
+  font-size: 48px;
   text-decoration: 'none';
 }
