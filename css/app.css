@@ -11,7 +11,8 @@
 
 .blue-button-text {
   text-align: center;
-  line-height: 55px; }
+  line-height: 55px;
+  width: 100%; }
 
 .navbar {
   position: fixed;
@@ -263,6 +264,12 @@
 .homepage-section-bits h2 {
   margin-top: 0px; }
 
+.section-blue-border {
+  width: 165px;
+  height: 30px;
+  border-top: 1px solid #7bceed;
+  margin: 0 auto; }
+
 .homepage-section-subtext-1, .homepage-section-subtext-2 {
   font-family: "AvenirNext-Regular", sans-serif;
   color: #ffffff;
@@ -280,20 +287,38 @@
   padding-bottom: 60px; }
 
 .sections-article-container {
-  background-color: white; }
+  background-color: #f5f4f3; }
 
 .sections-article-img-container {
-  width: 100%;
+  width: 100vw;
+  padding: 30px;
+  padding-top: 60px;
+  padding-bottom: 0px;
   overflow: hidden;
-  display: none; }
+  box-sizing: border-box; }
 
 .sections-article-img-container img {
-  width: 80vw;
-  display: inline-block;
-  /* Instead of display: block; */
+  width: 100%;
   margin: 0 auto;
-  border: 50px;
   vertical-align: middle; }
+
+.sections-article-text-container {
+  padding: 30px; }
+
+.sections-article-text-heading h4 {
+  color: #585858;
+  margin-top: 0px;
+  margin-bottom: 10px; }
+
+.sections-article-subtext-1, .sections-article-subtext-2 {
+  font-family: "AvenirNext-Regular", sans-serif;
+  font-size: 20px;
+  color: #585858; }
+
+.sections-article-subtext-2 {
+  margin-top: 30px;
+  font-size: 14px;
+  margin-bottom: 40px; }
 
 html body {
   margin: 0px; }
@@ -318,5 +343,10 @@ h3 {
   color: #ffffff;
   font-size: 48px;
   text-decoration: 'none'; }
+
+h4 {
+  font-family: "BrandonGrotesque-Regular", sans-serif;
+  color: #585858;
+  font-size: 36px; }
 
 /*# sourceMappingURL=app.css.map */

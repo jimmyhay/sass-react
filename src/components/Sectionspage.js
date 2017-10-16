@@ -18,14 +18,17 @@ class Sectionspage extends React.Component {
             <div className='section-blue-border'></div>
             <div className='homepage-section-subtext-1'>Stroke is a brain attack, occurring when the blood supply to any part of the brain is cut off or blocked. </div>
             <div className='homepage-section-subtext-2'>Find out more about stroke, the causes, effects, the different types, and other general information.</div>
-            {/*}<div className='homepage-section-clear'/>*/}
+            <div className='homepage-section-clear'/>
           </div>
           <div className='homepage-scroll'>
             <div>Scroll to Explore</div>
             <img src='./assets/homepage/down-arrow.png'/>
           </div>
         </div>
-        <SectionspageArticle />
+        <SectionspageArticle grey='false' />
+        <SectionspageArticle grey='true' />
+        <SectionspageArticle grey='false' />
+        <SectionspageArticle grey='true' />
       </div>
     );
   }

@@ -7,7 +7,7 @@ import Repos from './components/Repos'
 import Sectionspage from './components/Sectionspage'
 import Navbar from './components/Navbar.js'
 // import css from './src/app.css';
-require("./app.css");
+require("../css/app.css");
 
 render((
   <div>

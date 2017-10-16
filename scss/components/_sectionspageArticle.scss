@@ -1,18 +1,41 @@
 .sections-article-container {
-  background-color: white;
+  background-color: $section-article-grey-back-color;
 }
 
 .sections-article-img-container {
-  width: 100%;
+  width: 100vw;
+  padding: 30px;
+  padding-top: 60px;
+  padding-bottom: 0px;
   // padding: 30px;
   overflow: hidden;
-  display: none;
+  box-sizing: border-box;
 }
 
 .sections-article-img-container img {
-  width: 80vw;
-  display: inline-block; /* Instead of display: block; */
+  width: 100%;
   margin: 0 auto;
-  border: 50px;
   vertical-align: middle;
+}
+
+.sections-article-text-container {
+  padding: 30px;
+}
+
+.sections-article-text-heading h4 {
+  color: $font-5-color;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.sections-article-subtext-1, .sections-article-subtext-2 {
+  font-family: $font-4;
+  font-size: 20px;
+  color: $font-5-color;
+}
+
+.sections-article-subtext-2 {
+  margin-top: 30px;
+  font-size: 14px;
+  margin-bottom: 40px;
 }

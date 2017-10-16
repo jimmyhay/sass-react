@@ -13,8 +13,8 @@ class BlueButton extends React.Component {
   render() {
     return (
       <div>
-        <div className='blue-button-container'>
-          <span className='blue-button-text'>Learn More</span>
+        <div className='blue-button-container' style={{width:this.props.setWidth}}>
+          <div className='blue-button-text'>Learn More</div>
         </div>
       </div>
     );
