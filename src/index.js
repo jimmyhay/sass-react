@@ -11,12 +11,12 @@ require("./app.css");
 
 render((
   <div>
-    <Navbar />
     <Router history={hashHistory}>
       <Route path="/" component={App}/>
       {/* add the routes here */}
       <Route path="/repos" component={Repos}/>
       <Route path="/secondLevel" component={SecondLevel}/>
     </Router>
+    <Navbar />
   </div>
 ), document.getElementById('app'))

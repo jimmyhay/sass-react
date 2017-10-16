@@ -13,9 +13,9 @@ class Homepage extends React.Component {
             <source src="./assets/videos/HP_Homepage.mp4" type="video/mp4"></source>
           </video>
         </div>
-        <div><HomepageSection color='lightgrey' video='./assets/videos/HP_about.mp4'/></div>
-        <div><HomepageSection color='blue'  video='./assets/videos/HP_LifeAfter.mp4'/></div>
-        <div><HomepageSection color='white'  video='./assets/videos/HP_TakeAction0.mp4'/></div>
+        <div><HomepageSection color='lightgrey' heading='Heading Test' text1='' text2='' video='./assets/videos/HP_about.mp4'/></div>
+        {/*}<div><HomepageSection color='blue'  video='./assets/videos/HP_LifeAfter.mp4'/></div>
+        <div><HomepageSection color='white'  video='./assets/videos/HP_TakeAction0.mp4'/></div>*/}
       </div>
     );
   }

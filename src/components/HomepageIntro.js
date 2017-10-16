@@ -1,11 +1,26 @@
 import React from 'react';
 
 class HomepageIntro extends React.Component {
+  constructor(props) {
+      super(props);
+
+      this.state = {introText1Visible: false, introText2Visible: false};
+   }
+
+  componentDidMount() {
+  }
+
+  componentWillUnmount() {
+  }
+
+  componentDidUpdate() {
+    console.log("UPDATED");
+  }
 
   render() {
     return (
       <div className='homepage-intro-container centre-text'>
-        <div className='homepage-intro-text-1'>Sign Against Stroke is a global campaign that raises awareness about stroke, and its relationship with the condition known as atrial fibrillation (AF).<br/><br/>As stroke and AF-related stroke can be prevented, we are here to share information and knowledge to help both those who are at risk learn more about prevention, and support those
+        <div ref='refTest2' className='homepage-intro-text-1'>Sign Against Stroke is a global campaign that raises awareness about stroke, and its relationship with the condition known as atrial fibrillation (AF).<br/><br/>As stroke and AF-related stroke can be prevented, we are here to share information and knowledge to help both those who are at risk learn more about prevention, and support those
 who have been affected.</div>
         <div className='homepage-intro-text-2'>We are also engaged at a local and national level to make stroke prevention and AF treatment a priority in health agendas, promoting education and best practices around diagnosing and treating these conditions.
 

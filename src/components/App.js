@@ -1,10 +1,63 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
 import { Link } from 'react-router'
 import Navbar from './Navbar'
 import HomepageSection from './HomepageSection'
 import HomepageIntro from './HomepageIntro'
 
-export default React.createClass({
+// export default React.createClass({
+class App extends React.Component {
+  constructor(props) {
+      super(props);
+
+      this.state = {homepageIntroVisible: false};
+
+      this.handleScroll = this.handleScroll.bind(this);
+   }
+
+  componentDidMount() {
+    console.log(this.props.children);
+
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  componentDidUpdate() {
+    console.log("UPDATED");
+  }
+
+  handleScroll(event) {
+    // console.log(window.pageYOffset);
+
+    // console.log();
+    //console.log(document.documentElement.offsetHeight-window.innerHeight);
+
+    // console.log(ReactDOM.findDOMNode(this.refs['homepageIntro']).getBoundingClientRect().y/window.innerHeight);
+    console.log(ReactDOM.findDOMNode(this.refs['refTest']));
+    if (ReactDOM.findDOMNode(this.refs['homepageIntro']).getBoundingClientRect().y/window.innerHeight < 0.8
+        && !this.state.homepageIntroVisible) {
+        // TweenMax.to(this.refs.homepageIntro,.6,{opacity:1, ease:'easeInOutCubic'});
+    }
+    // this.setProps({scrollPos: window.pageYOffset});
+
+
+    // this.state.scrollPos = window.pageYOffset;
+    // console.log('handleScroll', event.srcElement.documentElement.scrollTop);
+    // console.log(this.props);
+
+    // setState({scrollPos: event.srcElement.documentElement.scrollTop});
+
+    // let scrollTop = event.srcElement.body.scrollTop,
+    //     itemTranslate = Math.min(0, scrollTop/3 - 60);
+    //
+    // this.setState({
+    //   transform: itemTranslate
+    // });
+  }
+
   render() {
     return (
       <div>
@@ -22,11 +75,13 @@ export default React.createClass({
             <img src='./assets/homepage/down-arrow.png'/>
           </div>
         </div>
-        <div><HomepageIntro /></div>
-        <Link to="/secondLevel"><div><HomepageSection color='black' video='./assets/videos/HP_about.mp4'/></div></Link>
-        <div><HomepageSection color='black'  video='./assets/videos/HP_LifeAfter.mp4'/></div>
-        <div><HomepageSection color='black'  video='./assets/videos/HP_TakeAction0.mp4'/></div>
+        <div ref='homepageIntro'><HomepageIntro ref='refTest'/></div>
+        <Link to="/secondLevel" style={{ textDecoration: 'none' }}><div><HomepageSection color='black' heading='About Stroke' text1='' text2='' video='./assets/videos/HP_about.mp4'/></div></Link>
+        <div><HomepageSection color='black' heading='Life After Stroke' text1='' text2='' video='./assets/videos/HP_LifeAfter.mp4'/></div>
+        <div><HomepageSection color='black' heading='Kinds of Stroke' text1='' text2='' video='./assets/videos/HP_TakeAction0.mp4'/></div>
       </div>
     )
   }
-})
+}
+
+export default App;

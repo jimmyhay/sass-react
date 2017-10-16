@@ -75,17 +75,21 @@
   padding: 60px 29px 60px 29px;
 }
 
-.homepage-intro-text-1 {
+.homepage-intro-text-1, .homepage-intro-text-2 {
   font-family: $font-1;
-  font-weight: $font-1-bold;
   color: $font-1-color;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.homepage-intro-text-1 {
+  font-weight: $font-1-bold;
   font-size: 24px;
   padding-bottom: 30px;
 }
 
 .homepage-intro-text-2 {
-  font-family: $font-1;
-  color: $font-1-color;
   font-size: 18px;
 }
 

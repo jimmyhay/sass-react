@@ -1,4 +1,5 @@
 import React from 'react';
+import BlueButton from './BlueButton';
 
 class HomepageSection extends React.Component {
   mouseOverHandler () {
@@ -15,10 +16,11 @@ class HomepageSection extends React.Component {
         <div className='video-overlay-two' style={{backgroundColor:this.props.color}} onMouseOver={this.mouseOverHandler.bind(this)}
         onMouseOut={this.mouseOutHandler.bind(this)}>
             <div className='homepage-section-bits'>
-              <h2>About Stroke</h2>
+              <h2>{this.props.heading}</h2>
               <div className='homepage-section-subtext-1'>Stroke is a brain attack, occurring when the blood supply to any part of the brain is cut off or blocked. </div>
               <div className='homepage-section-subtext-2'>Find out more about stroke, the causes, effects, the different types, and other general information.</div>
               {/*}<div className='homepage-section-clear'/>*/}
+              <BlueButton />
             </div>
             <div className='homepage-section-video-container'>
               <video ref='video' loop='true' className="homepage-section-video-background" muted='true'>

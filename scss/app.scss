@@ -1,5 +1,6 @@
 @import 'components/include-media.scss';
 @import 'config/_config.scss';
+@import 'components/_bluebutton.scss';
 @import 'components/_navbar.scss';
 @import 'components/_navmenu.scss';
 @import 'components/_homepage.scss';
@@ -11,7 +12,7 @@ html body {
 }
 
 body {
-  background-color: lightgreen;
+  background-color: black;
 }
 
 h1 {
@@ -25,5 +26,5 @@ h2 {
   font-family: $font-3;
   color: $font-3-color;
   font-size: 36px;
-  text-align: center;
+  text-decoration: 'none';
 }
