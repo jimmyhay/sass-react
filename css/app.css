@@ -263,12 +263,6 @@
 .homepage-section-bits h2 {
   margin-top: 0px; }
 
-.section-blue-border {
-  width: 165px;
-  height: 30px;
-  border-top: 1px solid #7bceed;
-  margin: 0 auto; }
-
 .homepage-section-subtext-1, .homepage-section-subtext-2 {
   font-family: "AvenirNext-Regular", sans-serif;
   color: #ffffff;
@@ -290,13 +284,15 @@
 
 .sections-article-img-container {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  display: none; }
 
 .sections-article-img-container img {
-  width: 100vw;
+  width: 80vw;
   display: inline-block;
   /* Instead of display: block; */
   margin: 0 auto;
+  border: 50px;
   vertical-align: middle; }
 
 html body {
