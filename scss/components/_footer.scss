@@ -1,0 +1,31 @@
+.footer-container {
+  background-color: white;
+  color: $font-5-color;
+  font-family: $font-1;
+  font-size: 28px;
+  text-align:center;
+  padding-top: 65px;
+}
+
+.footer-links-container {
+  margin: 0px 29px 0px 29px;
+}
+
+.footer-links-h1 {
+  color: $light-blue-color;
+  padding-bottom: 30px;
+}
+
+.footer-link {
+  padding-bottom: 20px;
+}
+
+.footer-divider {
+  width: 102px;
+  border-top:3px solid #f5f4f3;
+  margin: 20px auto 40px;
+}
+
+.footer-expanded {
+  // display: none;
+}

@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 import Navbar from './Navbar'
 import HomepageSection from './HomepageSection'
 import HomepageIntro from './HomepageIntro'
-import BottomFooter from './BottomFooter'
+import Footer from './Footer'
 
 // export default React.createClass({
 class App extends React.Component {
@@ -87,7 +87,7 @@ class App extends React.Component {
         <Link to="/secondLevel" style={{ textDecoration: 'none' }}><div><HomepageSection color='black' heading='About Stroke' text1='' text2='' video='./assets/videos/HP_about.mp4'/></div></Link>
         <Link to="/thirdLevel" style={{ textDecoration: 'none' }}><div><HomepageSection color='black' heading='Life After Stroke' text1='' text2='' video='./assets/videos/HP_LifeAfter.mp4'/></div></Link>
         <div><HomepageSection color='black' heading='Kinds of Stroke' text1='' text2='' video='./assets/videos/HP_TakeAction0.mp4'/></div>
-        <BottomFooter />
+        <Footer />
       </div>
     )
   }

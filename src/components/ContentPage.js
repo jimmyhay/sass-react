@@ -1,5 +1,5 @@
 import React from 'react';
-import BottomFooter from './BottomFooter'
+import Footer from './Footer'
 
 class ContentPage extends React.Component {
   render() {
@@ -64,7 +64,7 @@ class ContentPage extends React.Component {
             </div>
           </div>
         </div>
-        <BottomFooter />
+        <Footer />
       </div>
     );
   }

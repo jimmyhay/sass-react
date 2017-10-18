@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionspageArticle from './SectionspageArticle.js'
-import BottomFooter from './BottomFooter.js'
+import SectionspageArticle from './SectionspageArticle'
+import Footer from './Footer'
 
 class Sectionspage extends React.Component {
   render() {
@@ -30,7 +30,7 @@ class Sectionspage extends React.Component {
         <SectionspageArticle grey='true' />
         <SectionspageArticle grey='false' />
         <SectionspageArticle grey='true' />
-        <BottomFooter />
+        <Footer />
       </div>
     );
   }
