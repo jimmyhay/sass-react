@@ -7,6 +7,8 @@
 @import 'components/_homepageSection.scss';
 @import 'components/_sectionspage.scss';
 @import 'components/_sectionspageArticle.scss';
+@import 'components/_contentPage.scss';
+@import 'components/_bottomFooter.scss';
 @import 'mixins/_breakpoints.scss';
 
 html body {
@@ -25,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-family: $font-3;
+  font-family: $font-1-bold;
   color: $font-3-color;
   font-size: 36px;
   text-decoration: 'none';

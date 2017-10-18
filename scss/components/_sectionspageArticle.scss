@@ -39,3 +39,48 @@
   font-size: 14px;
   margin-bottom: 40px;
 }
+
+@include media(">desktop") {
+  .sections-article-container {
+    background-color: white;
+  }
+
+  .sections-article-img-container {
+    width: 50vw;
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    // padding: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .sections-article-img-container img {
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+
+  .sections-article-text-container {
+    padding: 30px;
+  }
+
+  .sections-article-text-heading h4 {
+    color: $font-5-color;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .sections-article-subtext-1, .sections-article-subtext-2 {
+    font-family: $font-4;
+    font-size: 20px;
+    color: $font-5-color;
+  }
+
+  .sections-article-subtext-2 {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+}

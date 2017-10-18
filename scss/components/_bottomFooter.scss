@@ -1,0 +1,121 @@
+.bottom-footer-container {
+  width: 100%;
+  height: auto;
+  background-image: url('/assets/images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-footer-info-container {
+  font-family: $font-4;
+  color: $font-4-color;
+  text-align:center;
+  padding: 29px;
+  padding-top: 60px;
+
+}
+
+.bottom-footer-quote {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.bottom-footer-author {
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.bottom-footer-privacy {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom:1px solid rgba(216, 216, 216, .3);
+}
+
+.bottom-footer-terms {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom:1px solid rgba(216, 216, 216, .3);
+}
+
+.bottom-footer-legal {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom:1px solid rgba(216, 216, 216, .3);
+}
+
+.bottom-footer-polish {
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.bottom-footer-copyright {
+  font-size: 12px;
+}
+
+@include media(">desktop") {
+  // .bottom-footer-container {
+  //   width: 100%;
+  //   height: auto;
+  //   background-image: url('/assets/images/background.jpg');
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+  //
+  .bottom-footer-info-container {
+    // font-family: $font-4;
+    // color: $font-4-color;
+    // text-align:center;
+    // padding: 29px;
+    // padding-top: 60px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .bottom-footer-quote {
+    font-size: 50px;
+    // padding-bottom: 20px;
+  }
+
+  .bottom-footer-author {
+    text-align: right;
+    // font-size: 18px;
+    // padding-bottom: 40px;
+  }
+
+  .bottom-footer-privacy {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(216, 216, 216, .3);
+  }
+
+  .bottom-footer-terms {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(216, 216, 216, .3);
+  }
+
+  .bottom-footer-legal {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid rgba(216, 216, 216, .3);
+  }
+
+  .bottom-footer-polish {
+    font-size: 16px;
+    // padding-top: 20px;
+    // padding-bottom: 14px;
+  }
+
+  .bottom-footer-copyright {
+    font-size: 14px;
+  }
+}

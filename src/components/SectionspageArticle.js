@@ -26,7 +26,7 @@ class SectionspageArticle extends React.Component {
           <div className='sections-article-text-heading'><h4>Signs & Symptoms</h4></div>
           <div className='sections-article-subtext-1'>Stroke is a brain attack, occurring when the blood supply to any part of the brain is cut off or blocked.</div>
           <div className='sections-article-subtext-2'>Find out more about stroke, the causes, effects, the different types, and other general information.</div>
-          <BlueButton setWidth='100%' />
+          <BlueButton setWidth='218px' />
         </div>
       </div>
     );

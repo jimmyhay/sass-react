@@ -4,11 +4,11 @@
   color: $font-1;
 }
 
-.homepage-content {
-  position: absolute;
-}
+// .homepage-content {
+//   position: absolute;
+// }
 
-.homepage-section-bits {
+.sections-bits {
   position: relative;
   top: 50%;
   left: 50%;
@@ -21,18 +21,28 @@
   z-index: 5;
 }
 
-.homepage-section-bits h2 {
-  margin-top: 0px;
+.sections-page-h1 {
+  font-family: $font-3;
+  color: $font-4-color;
+  font-size: 48px;
+  font-weight:100;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-.section-blue-border {
+.sections-title-second-word {
+  font-family: $font-1;
+  font-weight:bolder;
+}
+
+.sections-blue-border {
   width: 165px;
   height: 30px;
   border-top:1px solid $light-blue-color;
   margin: 0 auto;
 }
 
-.homepage-section-subtext-1, .homepage-section-subtext-2 {
+.sections-subtext-1, .sections-subtext-2 {
   font-family: $font-4;
   color: $font-4-color;
   text-align: center;
@@ -41,11 +51,11 @@
   padding-left: 29px; padding-right: 29px;
 }
 
-.homepage-section-subtext-1 {
+.sections-subtext-1 {
   padding-bottom: 30px;
 }
 
-.homepage-section-subtext-2 {
+.sections-subtext-2 {
   font-size: 14px;
   padding-bottom: 60px;
 }

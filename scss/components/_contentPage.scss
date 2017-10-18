@@ -1,0 +1,248 @@
+.content-page-container {
+  background-color: white;
+}
+
+.content-page-body-container {
+  margin: 60px 0px 0px 0px;
+}
+
+.content-page-margin {
+  margin: 0px 30px 0px 30px;
+}
+
+.content-page-section-h {
+  font-family: $font-1;
+  font-size: 24px;
+  color: $light-blue-color;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.content-page-h1 {
+  font-family: $font-1;
+  color: $content-h1-color;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 48px;
+  padding-bottom: 20px;
+}
+
+.content-page-h2 {
+  font-family: $font-1-bold;
+  font-size: 36px;
+  color: $content-text-color;
+  padding: 80px 0px 20px 0px;
+}
+
+.content-page-h3 {
+  font-family: $font-1-bold;
+  font-size: 24px;
+  color: $content-text-color;
+}
+
+.content-page-img-container {
+  position: relative;
+}
+
+.content-page-img-holder {
+  width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+
+.content-page-img-holder img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.content-page-bluebox {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  // top: -65px;
+  width: calc(100% - 60px);
+  transform: translateX(-50%);
+  max-width: 300px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 16px;
+  margin: 0 auto;
+  background-color: $light-blue-color;
+  color: white;
+  font-family: $font-4;
+  font-size: 18px;
+  text-align: center;
+}
+
+.content-page-bluebox-firstword {
+  font-size: 36px;
+}
+
+.content-page-text {
+  font-family: $font-4;
+  font-size: 18px;
+  color: $content-text-color;
+  padding-bottom: 40px;
+}
+
+.content-page-text1 {
+  font-family: $font-1;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.content-page-text2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.content-page-text3 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.content-page-text4 {
+  padding-bottom: 40px;
+}
+
+.content-page-text5 {
+
+}
+
+.content-page-text6 {
+}
+
+.content-page-text7 {
+
+}
+
+.content-page-text8 {
+
+}
+
+.content-page-text9 {
+
+}
+
+.content-page-text10 {
+
+}
+
+.content-page-quote {
+  font-family: $font-1;
+  font-size: 24px;
+  text-align: center;
+  color: $light-blue-color;
+  padding-bottom: 30px;
+}
+
+.content-page-list {
+  line-height: 2.5;
+  list-style: none;
+}
+
+.content-page-list li {
+  counter-increment: item;
+  color: $light-blue-color;
+}
+
+.content-page-list li:before {
+  font-family: $font-1;
+  font-size: 18px;
+  content: counter(item);
+  text-align: center;
+  border-bottom:1px solid $light-blue-color;
+  margin-right: 30px;
+  padding-left: 4px; padding-right: 4px;
+}
+
+.content-page-list li span {
+  color: $content-text-color;
+}
+
+@include media(">desktop") {
+  // .content-page-margin {
+  //   margin: 0px 15% 0px 15%;
+  // }
+
+  .content-page-section-h {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .content-page-h1 {
+    text-align: center;
+    line-height: 1.4;
+    font-size: 90px;
+    padding-bottom: 20px;
+  }
+
+  .content-page-h2 {
+    font-size: 50px;
+    padding: 80px 0px 20px 0px;
+    width: 75%;
+    max-width: 946px;
+    margin: 0 auto;
+  }
+
+  .content-page-h3 {
+    font-size: 36px;
+    width: 75%;
+    max-width: 946px;
+    margin: 0 auto;
+  }
+
+  .content-page-text {
+    font-size: 26px;
+    padding-bottom: 40px;
+    width: 75%;
+    max-width: 946px;
+    margin: 0 auto;
+  }
+
+  .content-page-text1 {
+    font-family: $font-1;
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .content-page-text2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .content-page-text3 {
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  .content-page-text4 {
+    padding-bottom: 40px;
+  }
+
+  .content-page-quote {
+    font-size: 36px;
+    width: 75%;
+    max-width: 946px;
+    margin: 0 auto;
+  }
+
+  .content-page-bluebox {
+    left: calc(100% - 458px); bottom: 50px;
+    width: 458px;
+    max-width: 458px;
+    padding: 45px 50px 60px 50px;
+    font-size: 36px;
+    text-align: left;
+    margin: 0 0 0 0;
+    transform: none;
+  }
+
+  .content-page-bluebox-firstword {
+    font-size: 60px;
+  }
+}
